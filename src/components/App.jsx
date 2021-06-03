@@ -1,5 +1,9 @@
 import RegistryType from './RegistryType'
-import data from '../models/registries'
+import Header from './Header'
+import Members from './Members'
+import Balance from './Balance'
+import registries from '../models/registries'
+import membersData from '../models/members'
 
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap/dist/js/bootstrap.bundle'
@@ -14,14 +18,16 @@ const iconList = Object
 
 library.add(...iconList)
 
-
 function App() {
 
-  return <>
-    {data.map(({type, categories}, idx) => (
+  return <div className="col-lg-8 mx-auto p-3 py-md-5">
+    <Header />
+    <Members members={membersData}/>
+    {registries.map(({type, categories}, idx) => (
       <RegistryType type={type} categories={categories} key={idx} />
     ))}
-  </>;
+    <Balance />
+  </div>;
 }
 
 export default App;

@@ -1,0 +1,44 @@
+[
+    {
+        "type": "despesa",
+        "category": "essenciais",
+        "value": 20.56,
+        "description": "padaria"
+    },
+    {
+        "type": "despesa",
+        "category": "alimentacao",
+        "value": 60.30,
+        "description": "sushi"
+    },
+    {
+        "type": "despesa",
+        "category": "veiculos",
+        "value": 60.30,
+        "description": "gasolina"
+    },
+    {
+        "type": "investimento",
+        "category": "aposentadoria",
+        "value": 200,
+        "description": "aposentadoria"
+    },
+    {
+        "type": "reserva",
+        "category": "pessoal",
+        "value": 800,
+        "description": "pessoal"
+    },
+    {
+        "type": "investimento",
+        "category": "aposentadoria",
+        "value": 150.25,
+        "description": "aposentadoria 2"
+    },
+    {
+        "type": "despesa",
+        "category": "pets",
+        "value": 35.80,
+        "description": "ração"
+    }
+]
